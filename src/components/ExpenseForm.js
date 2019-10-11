@@ -25,7 +25,6 @@ export default class ExpenseForm extends React.Component {
   };
   onAmountChange = (e) => {
     const amount = e.target.value;
-
     if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
       this.setState(() => ({ amount }));
     }
@@ -40,7 +39,6 @@ export default class ExpenseForm extends React.Component {
   };
   onSubmit = (e) => {
     e.preventDefault();
-
     if (!this.state.description || !this.state.amount) {
       this.setState(() => ({ error: 'Please provide description and amount.' }));
     } else {

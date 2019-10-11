@@ -15,6 +15,7 @@ const db = firebase.database();
 
 export { firebase, db as default };
 
+
 // db.ref('expenses')
 //   .on('value', (snapshot) => {
 //     const expenses = [];
